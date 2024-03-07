@@ -1,4 +1,4 @@
-const Cache = require("../built/cache");
+const Cache = require("../build/cache");
 const assert = require("assert");
 
 const KEY_0 = "key0"; // NEVER ADD THIS KEY. It needs to be a guarantee miss
