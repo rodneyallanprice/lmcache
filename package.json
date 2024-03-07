@@ -1,0 +1,32 @@
+{
+  "name": "lmcache",
+  "version": "1.0.0",
+  "description": "Local memory cache.",
+  "main": "cache.js",
+  "scripts": {
+    "test": "mocha",
+    "debug": "node --inspect index.js"
+  },
+  "mocha": {
+    "watch-files": [
+      "**/*.js"
+    ],
+    "files.glob": "**/*.js",
+    "logVervose": true
+  },
+  "keywords": [
+    "cache",
+    "memory",
+    "local",
+    "last",
+    "used",
+    "first",
+    "out"
+  ],
+  "author": "Rodney Price",
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "mocha": "^10.3.0"
+  }
+}
