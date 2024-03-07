@@ -225,7 +225,7 @@ class LMCache {
 
   /**************************** testing code below ****************************
    *                                                                          *
-   *       These methods below are not intended for use in production.        *
+   *       The methods below are not intended for use in production.          *
    *       They exist only to make thorough testing possible.                 *
    *                                                                          *
    ****************************************************************************/

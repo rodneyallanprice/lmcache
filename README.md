@@ -5,7 +5,7 @@ LMCache is used to provide a local memory cache with the following characteristi
 - The code is 100% javascript with no runtime dependencies
 - The find() and add() methods use a constant time: O(1) algorithm.
   Speed does not vary with cache size.
-- Cache misses are just as fast (maybe faster) than cache hits.
+- Cache misses are just as fast (maybe faster) as cache hits.
 - Adding an item with the same key as an existing item will update the data of the existing item.
 - The memory usage is managed inline and automatically.
   There is no monitor thread or garbage collector.
@@ -39,7 +39,7 @@ tsc
 const Cache = require('lmcache');
 
 
-cache = new Cache(max_cache_items, max_seconds_unused);
+const cache = new Cache(max_cache_items, max_seconds_unused);
 
 cache.add(key, data);
 
