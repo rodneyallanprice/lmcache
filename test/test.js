@@ -1,5 +1,6 @@
+const {describe, it, before, beforeEach} = require('node:test')
+const assert = require('node:assert');
 const Cache = require("../build/cache");
-const assert = require("assert");
 
 const KEY_0 = "key0"; // NEVER ADD THIS KEY. It needs to be a guarantee miss
 const DATA_0 = "data0";
@@ -352,7 +353,7 @@ describe("validate cache integrity", function () {
 
     describe("when the cache has cache size minus one entries", function () {
       let cache;
-      this.beforeEach(function () {
+      beforeEach(function () {
         cache = new Cache(5);
         cache.add(KEY_1, DATA_1);
         validateFirstAdd(cache);
@@ -391,7 +392,7 @@ describe("validate cache integrity", function () {
 
     describe("when the cache has cache size entries", function () {
       let cache;
-      this.beforeEach(function () {
+      beforeEach(function () {
         cache = new Cache(5);
         cache.add(KEY_1, DATA_1);
         validateFirstAdd(cache);

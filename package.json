@@ -9,7 +9,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "mocha",
+    "test": "node --test test/",
     "debug": "node --inspect index.js",
     "build": "npx tsc"
   },
@@ -18,13 +18,6 @@
     "url": "https://github.com/rodneyallanprice/lmcache"
   },
   "homepage": "https://github.com/rodneyallanprice/lmcache#readme",
-  "mocha": {
-    "watch-files": [
-      "**/*.js"
-    ],
-    "files.glob": "**/*.js",
-    "logVervose": true
-  },
   "keywords": [
     "cache",
     "memory",
@@ -33,9 +26,6 @@
   "author": "Rodney Price",
   "license": "MIT",
   "devDependencies": {
-    "assert": "^2.1.0",
-    "mocha": "^10.3.0",
     "typescript": "^5.4.3"
-  },
-  "dependencies": {}
+  }
 }
