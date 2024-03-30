@@ -422,4 +422,4 @@ class LMCache {
   }
 }
 
-export = LMCache;
+export {LMCache};

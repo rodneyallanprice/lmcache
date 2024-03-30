@@ -4,6 +4,7 @@
   "description": "Local memory cache.",
   "main": "build/cache.js",
   "types": "build/cache.d.ts",
+  "type": "module",
   "files": [
     "build",
     "README.md"

@@ -1,6 +1,6 @@
-const {describe, it, before, beforeEach} = require('node:test')
-const assert = require('node:assert');
-const Cache = require("../build/cache");
+import {describe, it, before, beforeEach} from 'node:test';
+import assert from 'node:assert';
+import {LMCache as Cache} from "../build/cache.js";
 
 const KEY_0 = "key0"; // NEVER ADD THIS KEY. It needs to be a guarantee miss
 const DATA_0 = "data0";
@@ -95,6 +95,7 @@ describe("constructor", function () {
   });
 });
 describe("find", function () {
+    let cache;
   before(function () {
     cache = new Cache();
   });
