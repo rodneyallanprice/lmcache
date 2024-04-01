@@ -9,6 +9,9 @@
     "build",
     "README.md"
   ],
+  "engines": {
+    "node": ">=18.10.0"
+  },
   "scripts": {
     "test": "node --test test/",
     "debug": "node --inspect index.js",
