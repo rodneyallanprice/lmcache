@@ -1,6 +1,6 @@
 import {describe, it, before, beforeEach} from 'node:test';
 import assert from 'node:assert';
-import {LMCache as Cache} from "../build/cache.js";
+import Cache from "../build/cache.js";
 
 const KEY_0 = "key0"; // NEVER ADD THIS KEY. It needs to be a guarantee miss
 const DATA_0 = "data0";

@@ -1,6 +1,6 @@
 {
   "name": "lmcache",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Local memory cache.",
   "main": "build/cache.js",
   "types": "build/cache.d.ts",
